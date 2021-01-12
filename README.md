@@ -22,11 +22,11 @@ The tree structure of the training data should be:
 ```bash
 training_data
 ├── DIV2K_decoded
-|    └──DIV2K_HR
-|    └──DIV2K_LR_bicubic
-|        └──x2
-|        └──x3
-|        └──x4
+     └──DIV2K_HR
+     └──DIV2K_LR_bicubic
+         └──x2
+         └──x3
+         └──x4
 ```
 
 ## Testing
