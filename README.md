@@ -44,13 +44,6 @@ python test.py --upscale_factor 4 --depth 48 --checkpoint pretrained/48/epoch_77
 If you find SREFPN useful in your research, please consider citing:
 
 ```
-@inproceedings{SREFPN,
-  title={Super Resolution via Enchanced Feature Pyramid Network},
-  author={Raza, Muhammad and Ketsoi, Vachiraporn and Haopeng, Chen and Xubo, Yang},
-  booktitle={IEEE Transaction on Multimedia},
-  pages={1--12},
-  year={2021}
-}
 
 @article{SREFPN,
   title={Super Resolution via Enchanced Feature Pyramid Network},
