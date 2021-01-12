@@ -12,9 +12,9 @@ This is the official repository for Super Resolution via Enchanced Feature Pyram
 
 * Run training x2, x3, x4 model
 ```bash
-python train.py --root /path/to/DIV2K_decoded/ --depth=48 --scale 2 --pretrained pretrained/48/epoch_730_x2.pth
-python train.py --root /path/to/DIV2K_decoded/ --depth=48 --scale 3 --pretrained pretrained/48/epoch_786_x3.pth
-python train.py --root /path/to/DIV2K_decoded/ --depth=48 --scale 4 --pretrained pretrained/48/epoch_772_x4.pth
+python train.py --root training_data/ --depth=48 --scale 2 --pretrained pretrained/48/epoch_730_x2.pth
+python train.py --root training_data/ --depth=48 --scale 3 --pretrained pretrained/48/epoch_786_x3.pth
+python train.py --root training_data/ --depth=48 --scale 4 --pretrained pretrained/48/epoch_772_x4.pth
 ```
 
 ## Training
