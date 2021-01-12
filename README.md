@@ -42,7 +42,7 @@ python test.py --upscale_factor 4 --depth 48 --checkpoint pretrained/48/epoch_77
 
 ## Citation
 
-If you find SREFPN useful in your research, please consider citing:
+If you find SREFPN useful in your research, please consider citing: If you have any question regarding this repo, please contact cur_zii@outlook.com.
 
 ```
 
