@@ -4,9 +4,9 @@ This is the official repository for Super Resolution via Enchanced Feature Pyram
 
 ## Requriments
 
-Python 3.8.5
-Pytorch 1.6.0
-Windows 10
+- Python 3.8.5
+- Pytorch 1.6.0
+- Windows 10
 
 ## Testing
 
@@ -19,6 +19,7 @@ python train.py --root /path/to/DIV2K_decoded/ --depth=48 --scale 4 --pretrained
 
 ## Training
 
+The training dataset can be downloaded from [Training dataset DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/).
 * Run testing x2, x3, x4 models on Set5, Set14, BSDS100, Urban100 and Manga109. The models will produce the accuracies equivalent to mentioned in the paper.
 ```bash
 python test.py --upscale_factor 2 --depth 48 --checkpoint pretrained/48/epoch_730_x2.pth
