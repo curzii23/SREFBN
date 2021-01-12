@@ -51,4 +51,12 @@ If you find SREFPN useful in your research, please consider citing:
   pages={1--12},
   year={2021}
 }
+
+@article{SREFPN,
+  title={Super Resolution via Enchanced Feature Pyramid Network},
+  author={Raza, Muhammad and Ketsoi, Vachiraporn and Haopeng, Chen and Xubo, Yang},
+  journal={arXiv},
+  year={2021}
+}
+
 ```
