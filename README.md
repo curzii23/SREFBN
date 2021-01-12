@@ -5,6 +5,7 @@ This is the official repository for Super Resolution via Enchanced Feature Pyram
 ## Requriments
 
 - Python 3.8.5
+- Numpy 1.19.1
 - Pytorch 1.6.0
 - Windows 10
 
