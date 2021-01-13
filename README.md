@@ -32,7 +32,7 @@ training_data
 
 ## Testing
 
-Download the test datasets from [Testing Datasets](https://data.vision.ee.ethz.ch/cvl/DIV2K/). After extracting, the folder should be placed within the main directory in order to run the below commands.
+Download the test datasets from [Testing Datasets](https://1drv.ms/u/s!AkqWwiuX5ZbigRDvouGNzxi9LPYG?e=Gjxdus). After extracting, the folder should be placed within the main directory in order to run the below commands.
 * Run testing x2, x3, x4 models on Set5, Set14, BSDS100, Urban100 and Manga109. The models will produce the accuracies equivalent to mentioned in the paper.
 ```bash
 python test.py --upscale_factor 2 --depth 48 --checkpoint pretrained/48/epoch_730_x2.pth
@@ -42,7 +42,7 @@ python test.py --upscale_factor 4 --depth 48 --checkpoint pretrained/48/epoch_77
 
 ## Citation
 
-If you find SREFPN useful in your research, please consider citing:
+If you find SREFPN useful in your research, please consider citing: If you have any question regarding this repo, please contact cur_zii@outlook.com.
 
 ```
 
