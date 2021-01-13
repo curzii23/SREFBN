@@ -71,9 +71,7 @@ class ResNet(nn.Module):
 
 
     def _make_layer(self, block, out_channels, num_blocks, stride):
-        """make resnet layers(by layer i didnt mean this 'layer' was the
-        same as a neuron network layer, ex. conv layer), one layer may
-        contain more than one residual block
+        """make resnet layers
 
         Args:
             block: block type, basic block or bottle neck block
