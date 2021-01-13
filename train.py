@@ -9,7 +9,7 @@ import skimage.color as sc
 import random
 from collections import OrderedDict
 
-from model.model import resnet18
+from model.model import resnet
 
 # os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
@@ -90,7 +90,7 @@ testing_data_loader = DataLoader(dataset=testset, num_workers=args.threads, batc
 print("===> Building models")
 args.is_train = True
 
-model = resnet18(opt.scale, opt.upscale_factor)
+model = resnet(opt.scale, opt.upscale_factor)
 l1_criterion = nn.L1Loss()
 
 

@@ -1,11 +1,10 @@
 import torch
 import torch.nn as nn
-from torchsummary import summary
 import torch.nn.functional as F
 
 
 class BasicBlock(nn.Module):
-    """Basic Block for resnet 18"""
+    """Basic Block for resnet"""
 
     expansion = 1
 
@@ -128,15 +127,6 @@ class ResNet(nn.Module):
 
         return x
 
-def resnet18(in_channels, up_scale):
-    """ return a ResNet 18 object
-    """
+def resnet(in_channels, up_scale):
+    """ return a ResNet """
     return ResNet(BasicBlock, [2, 2, 2, 2, 2], in_channels, up_scale)
-
-def test():
-    model = resnet18(32, 4)#we have this model from the depth of 16 to 128
-    print(model)
-    modelgp = model.cuda()
-    summary(modelgp, (3, 192, 192))
-
-#test()

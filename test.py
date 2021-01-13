@@ -5,7 +5,7 @@ import numpy as np
 import utils
 import skimage.color as sc
 import cv2
-from model.model import resnet18
+from model.model import resnet
 # Testing settings
 
 
@@ -32,7 +32,7 @@ device = 'cuda'
 ext = '.png'
 patharray = ['Set5', 'Set14', 'BSDS100','Urban100','Manga109']
 
-model = resnet18(opt.depth, opt.upscale_factor)
+model = resnet(opt.depth, opt.upscale_factor)
 model_dict = utils.load_state_dict(opt.checkpoint)
 model.load_state_dict(model_dict, strict=True)
 model = model.to(device)
