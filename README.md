@@ -39,18 +39,3 @@ python test.py --upscale_factor 2 --depth 48 --checkpoint pretrained/48/srefpn_x
 python test.py --upscale_factor 3 --depth 48 --checkpoint pretrained/48/srefpn_x3.pth
 python test.py --upscale_factor 4 --depth 48 --checkpoint pretrained/48/srefpn_x4.pth
 ```
-
-## Citation
-
-If you find SREFPN useful in your research, please consider citing: If you have any question regarding this repo, please contact cur_zii@outlook.com.
-
-```
-
-@article{SREFPN,
-  title={Super Resolution via Enchanced Feature Pyramid Network},
-  author={Raza, Muhammad and Ketsoi, Vachiraporn and Haopeng, Chen and Xubo, Yang},
-  journal={arXiv},
-  year={2021}
-}
-
-```
