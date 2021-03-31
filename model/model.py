@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class BasicBlock(nn.Module):
-    """Basic Block for resnet"""
+    """Basic Block"""
 
     expansion = 1
 
@@ -24,17 +24,11 @@ class BasicBlock(nn.Module):
         #shortcut
         self.shortcut = nn.Sequential()
 
-        #the shortcut output dimension is not the same with residual function
-        #use 1*1 convolution to match the dimension
-        if stride != 1 or in_channels != BasicBlock.expansion * out_channels:
-            self.shortcut = nn.Sequential(
-                nn.Conv2d(in_channels, out_channels * BasicBlock.expansion, kernel_size=1, stride=stride))
-
     def forward(self, x):
         return self.residual_function(x) + self.shortcut(x)
 
 
-class ResNet(nn.Module):
+class SREFPN(nn.Module):
 
     def __init__(self, block, num_block, in_channels, up_scale):
         super().__init__()
@@ -71,24 +65,13 @@ class ResNet(nn.Module):
 
 
     def _make_layer(self, block, out_channels, num_blocks, stride):
-        """make resnet layers
-
-        Args:
-            block: block type, basic block or bottle neck block
-            out_channels: output depth channel number of this layer
-            num_blocks: how many blocks per layer
-            stride: the stride of the first block of this layer
-
-        Return:
-            return a resnet layer
-        """
 
         strides = [stride] + [1] * (num_blocks - 1)
 
         layers = []
         for stride in strides:
             layers.append(block(self.in_channels, out_channels, stride))
-            self.in_channels = out_channels * block.expansion#update inchannel
+            self.in_channels = out_channels * block.expansion
 
         return nn.Sequential(*layers)
 
@@ -125,6 +108,5 @@ class ResNet(nn.Module):
 
         return x
 
-def resnet(in_channels, up_scale):
-    """ return a ResNet """
-    return ResNet(BasicBlock, [2, 2, 2, 2, 2], in_channels, up_scale)
+def srefpn(in_channels, up_scale):
+    return SREFPN(BasicBlock, [2, 2, 2, 2, 2], in_channels, up_scale)
