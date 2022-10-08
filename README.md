@@ -1,6 +1,6 @@
-# SREFPN
+# SREFBN
 
-This is the official repository for Super Resolution via Enchanced Feature Pyramid Network (SREFPN). The pretrained models are given.
+This is the official repository for Super Resolution via Enchanced Feature Block Network (SREFBN). The pretrained models are given.
 
 ## Requriments
 
