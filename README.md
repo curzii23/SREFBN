@@ -39,3 +39,6 @@ python test.py --upscale_factor 2 --depth 48 --checkpoint pretrained/48/srefpn_x
 python test.py --upscale_factor 3 --depth 48 --checkpoint pretrained/48/srefpn_x3.pth
 python test.py --upscale_factor 4 --depth 48 --checkpoint pretrained/48/srefpn_x4.pth
 ```
+## Citation
+
+If you find the paper useful, please cite our paper from https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12546.
